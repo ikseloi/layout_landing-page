@@ -1,0 +1,32 @@
+.product {
+  &__img {
+    margin-block-end: 24px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-block-end: 8px;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-1-4;
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    margin-block-end: 12px;
+    font-size: $font-size-base;
+    font-weight: $font-weight-normal;
+    line-height: $line-height-1-4;
+    letter-spacing: $letter-spacing-sm;
+  }
+
+  &__price {
+    font-size: $font-size-base;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-1-4;
+  }
+}

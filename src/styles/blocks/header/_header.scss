@@ -1,0 +1,30 @@
+@import 'top-bar';
+@import 'icon';
+@import '../menu/menu';
+@import '../menu/nav';
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  box-sizing: border-box;
+
+  background-image: url('../images/header-bg-mobile.png');
+  background-size: cover;
+  background-position: center;
+
+  .header__bottom {
+    padding-block-end: $header-bottom-padding-block-end-mobile;
+
+    padding-inline-start: $header-bottom-padding-inline-start-mobile;
+  }
+
+  .header__title {
+    margin: 0;
+    font-size: $font-size-3xl;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-1;
+    color: $color-contrast;
+  }
+}

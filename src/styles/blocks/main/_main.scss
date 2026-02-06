@@ -1,0 +1,15 @@
+@import 'section';
+@import 'recomended/recommended';
+@import 'categories/category';
+@import 'legacy/lagacy';
+@import 'contacts/contacts';
+@import 'button';
+
+.main {
+  display: grid;
+  row-gap: $main-section-margin-block-end;
+
+  // &__section {
+  //   margin-block-end: $main-section-margin-block-end;
+  // }
+}

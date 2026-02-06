@@ -1,0 +1,63 @@
+.menu {
+  // box-sizing: border-box;
+  padding-inline: 20px;
+  height: 100vh;
+
+  color: black;
+  background-color: $menu-bg-color;
+  pointer-events: none;
+  opacity: 0;
+
+  &__content {
+    position: relative;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 24px;
+    margin-block-end: 32px;
+  }
+
+  &__link {
+    display: flex;
+  }
+
+  &__logo {
+    height: 16px;
+  }
+
+  &__nav {
+    margin-bottom: 40px;
+  }
+
+  &__phone-number,
+  &__call-to-order {
+    display: block;
+    text-decoration: none;
+
+    font-size: $font-size-base;
+    line-height: $line-height-1-4;
+    font-weight: $font-weight-bold;
+    letter-spacing: $letter-spacing-lg;
+    color: $color-text-main;
+  }
+
+  &__phone-number {
+    margin-block-end: 16px;
+  }
+
+  &__call-to-order {
+    padding-block-end: 3px;
+    border-bottom: 1px solid $color-text-main;
+
+    text-transform: uppercase;
+    width: fit-content;
+  }
+
+  &:target {
+    opacity: 1;
+    pointer-events: all;
+  }
+}

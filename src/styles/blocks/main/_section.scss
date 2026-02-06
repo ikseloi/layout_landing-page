@@ -1,0 +1,22 @@
+.section {
+  &__title {
+    margin: 0;
+    margin-block-end: 48px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-block-end: 8px;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-1-4;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: $font-size-base;
+    font-weight: $font-weight-normal;
+    line-height: $line-height-1-4;
+    letter-spacing: $letter-spacing-sm;
+  }
+}

@@ -1,0 +1,7 @@
+.category {
+  &__title {
+    &:last-of-type {
+      margin-block-end: 40px;
+    }
+  }
+}

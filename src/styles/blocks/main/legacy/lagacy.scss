@@ -1,0 +1,16 @@
+.legacy {
+  background-color: #fcfaef;
+  padding-block-end: 48px;
+
+  &__img {
+    display: block;
+    margin-inline-start: $neg-margin-legacy;
+    margin-block-end: 48px;
+    width: $legacy-img-width;
+    height: $legacy-img-height;
+  }
+
+  &__title {
+    margin-block-end: 24px;
+  }
+}
