@@ -1,0 +1,14 @@
+.section-title {
+  margin: 0;
+  margin-block-end: $section-title-margin-block-end-mobile;
+  font-size: $section-title-font-size-mobile;
+
+  @include on-tablet {
+    margin-block-end: $section-title-margin-block-end-tablet;
+    font-size: $section-title-font-size-tablet;
+  }
+
+  @include on-desktop {
+    font-size: $section-title-font-size-desktop;
+  }
+}

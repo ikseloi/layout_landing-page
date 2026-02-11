@@ -1,0 +1,16 @@
+@import 'category';
+
+.categories {
+  &__items {
+    display: grid;
+    row-gap: $categories-row-gap-mobile;
+
+    @include on-desktop {
+      row-gap: $categories-row-gap-desktop;
+    }
+  }
+
+  &__item {
+    grid-column: 1/-1;
+  }
+}

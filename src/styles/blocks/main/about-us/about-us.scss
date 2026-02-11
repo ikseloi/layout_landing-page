@@ -1,0 +1,72 @@
+.about-us {
+  display: grid;
+  padding-block-end: $about-us-padding-block-end-mobile;
+
+  @include on-tablet {
+    padding-block-end: $about-us-padding-block-end-on-tablet;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+    margin-block-end: $about-us-img-margin-block-end-mobile;
+
+    @include on-tablet {
+      margin-block-end: $about-us-img-margin-block-end-tablet;
+    }
+
+    @include on-desktop {
+      height: $about-us-img-heigh-on-desktop;
+    }
+  }
+
+  &__content {
+    @include page-grid;
+  }
+
+  &__title {
+    margin: 0;
+    margin-block-end: $about-us-title-margin-block-end;
+
+    font-size: $font-size-2xl;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-1;
+
+    grid-column: span $about-us-title-grid-column-span-mobile;
+
+    @include on-tablet {
+      grid-column: span $about-us-title-grid-column-span-on-tablet;
+
+      font-size: $font-size-4xl-0;
+    }
+
+    @include on-desktop {
+      grid-column: span $about-us-title-grid-column-span-on-desktop;
+
+      font-size: $font-size-4xl;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    grid-column: span 2;
+
+    font-size: $font-size-base;
+    line-height: $line-height-1-4;
+    letter-spacing: $letter-spacing-sm;
+    font-weight: $font-weight-normal;
+
+    @include on-tablet {
+      grid-column: span 3;
+    }
+
+    @include on-desktop {
+      grid-column: span 6;
+    }
+  }
+
+  background-color: #fcfaef;
+}

@@ -1,15 +1,16 @@
-@import 'section';
-@import 'recomended/recommended';
-@import 'categories/category';
-@import 'legacy/lagacy';
-@import 'contacts/contacts';
-@import 'button';
+@import 'recommended/recommended';
+@import 'categories/categories';
+@import 'about-us/about-us';
 
 .main {
-  display: grid;
-  row-gap: $main-section-margin-block-end;
+  &__content {
+    display: grid;
+    row-gap: $main_content-row-gap-mobile;
+    padding-block: $main-padding-block-mobile;
 
-  // &__section {
-  //   margin-block-end: $main-section-margin-block-end;
-  // }
+    @include on-tablet {
+      row-gap: $main_content-row-gap-tablet;
+      padding-block: $main-padding-block-tablet;
+    }
+  }
 }

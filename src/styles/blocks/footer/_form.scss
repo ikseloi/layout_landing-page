@@ -1,0 +1,38 @@
+.form {
+  box-sizing: border-box;
+  &__input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding-block: 14px;
+    padding-inline: 16px;
+    border: 1px solid transparent;
+
+    border-radius: 8px;
+
+    font-family: $font-family-main;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-normal;
+    letter-spacing: $letter-spacing-sm;
+    line-height: $line-height-1-4;
+
+    background-color: $input-bg-primary;
+
+    &:not(:last-child) {
+      margin-block-end: 16px;
+    }
+  }
+
+  &__input--message {
+    height: 148px;
+    margin-block-end: 32px;
+  }
+
+  &__input:hover {
+    border: 1px solid #dbdbdb;
+  }
+
+  &__input:focus {
+    outline: 2px solid #f98921;
+  }
+}

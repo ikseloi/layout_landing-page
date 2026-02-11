@@ -1,7 +1,13 @@
 .icon {
   display: block;
-  height: 24px;
-  width: 24px;
+  height: $icon-height-mobile;
+  width: $icon-width-mobile;
+  cursor: default;
+
+  @include on-tablet {
+    height: $icon-height-tablet;
+    width: $icon-width-tablet;
+  }
 
   background-size: cover;
   background-position: center;
@@ -12,6 +18,10 @@
 
   &--menu {
     background-image: url('../images/icons/icon-burger-menu.png');
+
+    &:hover {
+      background-image: url('../images/icons/Icon-burger-menu-hover.png');
+    }
   }
 
   &--close {

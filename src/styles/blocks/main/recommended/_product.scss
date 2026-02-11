@@ -1,23 +1,24 @@
 .product {
   &__img {
-    margin-block-end: 24px;
+    width: 100%;
+    display: block;
+    margin-inline: auto;
+    margin-block-end: $product-img-margin-block-end;
+
+    @include hover(transform, scale($scale-size));
   }
 
   &__title {
     margin: 0;
-    margin-block-end: 8px;
+    margin-block-end: $product-tittle-margin-block-end;
     font-size: $font-size-lg;
     font-weight: $font-weight-bold;
     line-height: $line-height-1-4;
-
-    &:last-child {
-      margin-bottom: 40px;
-    }
   }
 
   &__description {
     margin: 0;
-    margin-block-end: 12px;
+    margin-block-end: $product-description-margin-block-end;
     font-size: $font-size-base;
     font-weight: $font-weight-normal;
     line-height: $line-height-1-4;

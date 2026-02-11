@@ -1,35 +1,22 @@
 .menu {
-  // box-sizing: border-box;
-  padding-inline: 20px;
-  height: 100vh;
-
-  color: black;
-  background-color: $menu-bg-color;
-  pointer-events: none;
-  opacity: 0;
-
-  &__content {
-    position: relative;
-  }
-
   &__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-block: 24px;
-    margin-block-end: 32px;
-  }
+    // for a full-screen top-bar menu with a maximum screen height of up to 400 pixels
 
-  &__link {
-    display: flex;
-  }
+    @include content-padding-inline;
 
-  &__logo {
-    height: 16px;
+    margin-block-end: $menu-top-padding-block-end;
+
+    @include on-low-screen-height {
+      margin-block-end: $menu-top-padding-block-end-low-screen-height;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background-color: $menu-top-bar-bg;
+    }
   }
 
   &__nav {
-    margin-bottom: 40px;
+    margin-block-end: $menu-nav-margin-block-end;
   }
 
   &__phone-number,
@@ -45,19 +32,24 @@
   }
 
   &__phone-number {
-    margin-block-end: 16px;
+    margin-block-end: $menu-phone-margin-block-end;
   }
 
   &__call-to-order {
-    padding-block-end: 3px;
+    padding-block-end: $menu-call-to-order-padding-block-end;
     border-bottom: 1px solid $color-text-main;
 
     text-transform: uppercase;
     width: fit-content;
+
+    @include on-low-screen-height {
+      margin-block-end: $menu-call-to-order-margin-block-end-low-screen-height;
+    }
   }
 
-  &:target {
-    opacity: 1;
-    pointer-events: all;
-  }
+  height: 100vh;
+  overflow: auto;
+
+  color: $color-text-main;
+  background-color: $menu-bg;
 }

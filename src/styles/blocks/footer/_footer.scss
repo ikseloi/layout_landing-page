@@ -1,0 +1,9 @@
+@import 'contact-us';
+
+.footer {
+  padding-block-end: 48px;
+
+  @include on-tablet {
+    padding-block-end: 120px;
+  }
+}
