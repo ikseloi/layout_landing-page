@@ -48,6 +48,7 @@
   &__input--message {
     height: $form-input-message-height;
     margin-block-end: $form-input-message-margin-block-end;
+    resize: none;
   }
   &__input:hover {
     border: 1px solid #dbdbdb;
