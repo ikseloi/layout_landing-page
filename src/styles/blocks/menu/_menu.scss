@@ -6,7 +6,7 @@
 
     margin-block-end: $menu-top-padding-block-end;
 
-    @include on-low-screen-height {
+    @include on-compact-footer {
       margin-block-end: $menu-top-padding-block-end-low-screen-height;
       position: sticky;
       top: 0;
@@ -42,7 +42,7 @@
     text-transform: uppercase;
     width: fit-content;
 
-    @include on-low-screen-height {
+    @include on-compact-footer {
       margin-block-end: $menu-call-to-order-margin-block-end-low-screen-height;
     }
   }

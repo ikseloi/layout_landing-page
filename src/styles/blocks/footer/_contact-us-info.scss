@@ -3,7 +3,7 @@
   &__label {
     display: block;
     width: fit-content;
-    margin-block-end: 8px;
+    margin-block-end: $info-label-margin-block-end;
     text-decoration: none;
 
     font-size: $font-size-sm;
@@ -15,7 +15,7 @@
 
   &__link {
     &:not(:last-child) {
-      margin-block-end: $form-link-margin-block-end;
+      margin-block-end: $info-link-margin-block-end;
     }
 
     font-size: $font-size-base;
@@ -23,5 +23,10 @@
     letter-spacing: $letter-spacing-sm;
     font-weight: $font-weight-normal;
     color: $color-text-main;
+  }
+
+  @include on-compact-footer {
+    position: sticky;
+    bottom: 0;
   }
 }

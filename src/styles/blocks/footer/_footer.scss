@@ -1,9 +1,33 @@
 @import 'contact-us';
 
 .footer {
-  padding-block-end: 48px;
+  padding-block-end: $footer-padding-block-end-on-mobile;
 
   @include on-tablet {
-    padding-block-end: 120px;
+    padding-block-end: $footer-padding-block-end-on-tablet;
+
+    // background: #e5e5e5;
+  }
+
+  @include on-full-footer {
+    position: sticky;
+    max-width: $desktop-min-width;
+    margin-inline: auto;
+    bottom: 0;
   }
 }
+
+// #contact-us-position {
+//   display: block;
+//   position: relative;
+//   height: 0;
+// }
+
+// #contact-us-position::before {
+//   content: '';
+//   display: block;
+//   height: 652px;
+//   margin-top: 652px;
+//   visibility: hidden;
+//   z-index: 1;
+// }

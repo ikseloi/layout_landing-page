@@ -1,6 +1,6 @@
 .about-us {
   display: grid;
-  padding-block-end: $about-us-padding-block-end-mobile;
+  padding-block-end: $about-us-padding-block-end-on-mobile;
 
   @include on-tablet {
     padding-block-end: $about-us-padding-block-end-on-tablet;
@@ -12,14 +12,14 @@
     height: auto;
     object-fit: cover;
 
-    margin-block-end: $about-us-img-margin-block-end-mobile;
+    margin-block-end: $about-us-img-margin-block-end-on-mobile;
 
     @include on-tablet {
-      margin-block-end: $about-us-img-margin-block-end-tablet;
+      margin-block-end: $about-us-img-margin-block-end-on-tablet;
     }
 
     @include on-desktop {
-      height: $about-us-img-heigh-on-desktop;
+      height: $about-us-img-height-on-desktop;
     }
   }
 
@@ -35,7 +35,7 @@
     font-weight: $font-weight-bold;
     line-height: $line-height-1;
 
-    grid-column: span $about-us-title-grid-column-span-mobile;
+    grid-column: span $about-us-title-grid-column-span-on-mobile;
 
     @include on-tablet {
       grid-column: span $about-us-title-grid-column-span-on-tablet;
@@ -52,7 +52,7 @@
 
   &__text {
     margin: 0;
-    grid-column: span 2;
+    grid-column: span $about-us-text-grid-column-span-on-mobile;
 
     font-size: $font-size-base;
     line-height: $line-height-1-4;
@@ -60,11 +60,11 @@
     font-weight: $font-weight-normal;
 
     @include on-tablet {
-      grid-column: span 3;
+      grid-column: span $about-us-text-grid-column-span-on-tablet;
     }
 
     @include on-desktop {
-      grid-column: span 6;
+      grid-column: span $about-us-text-grid-column-span-on-desktop;
     }
   }
 

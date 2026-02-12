@@ -10,11 +10,11 @@
     @include hover(transform, scale($scale-size));
 
     display: flex;
-    height: $top-bar-logo-height-mobile;
-    cursor: default;
+    height: $top-bar-logo-height-on-mobile;
+    cursor: pointer;
 
     @include on-tablet {
-      height: $top-bar-logo-height-tablet;
+      height: $top-bar-logo-height-on-tablet;
     }
   }
 

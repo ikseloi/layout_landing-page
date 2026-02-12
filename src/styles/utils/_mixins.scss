@@ -10,45 +10,54 @@
   }
 }
 
-@mixin on-low-screen-height {
-  @media screen and (max-height: $max-height) {
+@mixin on-full-footer {
+  @media screen and (min-height: $height-breakpoint-footer) {
+    @content;
+  }
+}
+
+@mixin on-compact-footer {
+  @media screen and (max-height: #{$height-breakpoint-footer - 1px}) {
     @content;
   }
 }
 
 @mixin page-grid {
-  --columns: #{$columns-mobile};
+  --columns: #{$columns-on-mobile};
 
   display: grid;
-  column-gap: #{$column-gap-mobile};
+  column-gap: #{$column-gap-on-mobile};
   grid-template-columns: repeat(var(--columns), 1fr);
 
   @include on-tablet {
-    --columns: #{$columns-tablet};
+    --columns: #{$columns-on-tablet};
 
-    column-gap: #{$column-gap-tablet};
+    column-gap: #{$column-gap-on-tablet};
   }
 
   @include on-desktop {
-    --columns: #{$columns-desktop};
+    --columns: #{$columns-on-desktop};
   }
 }
 
 @mixin content-padding-inline {
-  padding-inline: $padding-inline-mobile;
+  padding-inline: $padding-inline-on-mobile;
 
   @include on-tablet {
-    padding-inline: $padding-inline-tablet;
+    padding-inline: $padding-inline-on-tablet;
   }
 
   @include on-desktop {
-    padding-inline: $padding-inline-desktop;
+    padding-inline: $padding-inline-on-desktop;
     margin-inline: auto;
   }
 }
 
 .container {
   @include content-padding-inline;
+
+  position: relative;
+  margin-inline: auto;
 }
 
 @mixin hover($property, $toValue) {

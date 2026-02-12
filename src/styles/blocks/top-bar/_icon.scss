@@ -1,30 +1,30 @@
 .icon {
   display: block;
-  height: $icon-height-mobile;
-  width: $icon-width-mobile;
-  cursor: default;
+  height: $icon-height-on-mobile;
+  width: $icon-width-on-mobile;
+  cursor: pointer;
 
   @include on-tablet {
-    height: $icon-height-tablet;
-    width: $icon-width-tablet;
+    height: $icon-height-on-tablet;
+    width: $icon-width-on-tablet;
   }
 
   background-size: cover;
   background-position: center;
 
   &--phone {
-    background-image: url('../images/icons/icon-phone.png');
+    background-image: url('../images/icons/icon-phone.webp');
   }
 
   &--menu {
-    background-image: url('../images/icons/icon-burger-menu.png');
+    background-image: url('../images/icons/icon-burger-menu.webp');
 
     &:hover {
-      background-image: url('../images/icons/Icon-burger-menu-hover.png');
+      background-image: url('../images/icons/Icon-burger-menu-hover.webp');
     }
   }
 
   &--close {
-    background-image: url('../images/icons/icon-close.png');
+    background-image: url('../images/icons/icon-close.webp');
   }
 }

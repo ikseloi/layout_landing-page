@@ -11,7 +11,7 @@
     grid-column: 1 / -1;
 
     @include on-desktop {
-      grid-column: span $recommended-column-span;
+      grid-column: span $recommended-column-span-on-desktop;
     }
   }
 }

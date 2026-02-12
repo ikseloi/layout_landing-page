@@ -5,12 +5,14 @@
 .main {
   &__content {
     display: grid;
-    row-gap: $main_content-row-gap-mobile;
-    padding-block: $main-padding-block-mobile;
+    row-gap: $main-content-row-gap-on-mobile;
+    padding-block: $main-padding-block-on-mobile;
 
     @include on-tablet {
-      row-gap: $main_content-row-gap-tablet;
-      padding-block: $main-padding-block-tablet;
+      row-gap: $main-content-row-gap-on-tablet;
+      padding-block: $main-padding-block-on-tablet;
     }
   }
+
+  background-color: $color-bg-main;
 }

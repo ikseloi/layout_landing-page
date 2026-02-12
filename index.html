@@ -28,7 +28,7 @@
 
     <link
       rel="icon"
-      href="src/images/favicon.png"
+      href="src/images/favicon.webp"
       type="image/png"
     />
     <link
@@ -42,8 +42,8 @@
   </head>
   <!-- #endregion  -->
 
-  <div class="page__wrapper">
-    <body class="page__body">
+  <body class="page__body">
+    <div class="page__wrapper">
       <!-- #region header + menu-->
       <header class="header">
         <div class="header__content">
@@ -53,7 +53,7 @@
               class="top-bar__logo-link"
             >
               <img
-                src="src/images/logo.png"
+                src="src/images/logo.webp"
                 alt="logo Bang & Olufsen"
                 class="header__logo"
               />
@@ -91,7 +91,7 @@
             class="top-bar__logo-link"
           >
             <img
-              src="src/images/logo.png"
+              src="src/images/logo.webp"
               alt="logo Bang & Olufsen"
               class="top-bar__logo"
             />
@@ -133,7 +133,7 @@
                 <li class="nav__item">
                   <a
                     class="nav__link"
-                    href="#contact-us"
+                    href="#contact-us-position"
                   >
                     Contact Us
                   </a>
@@ -173,7 +173,7 @@
                   >
                     <img
                       class="product__img"
-                      src="src/images/recommended/beosound-a5.png"
+                      src="src/images/recommended/beosound-a5.webp"
                       alt="BEOSOUND A5"
                     />
                   </a>
@@ -192,7 +192,7 @@
                   >
                     <img
                       class="product__img"
-                      src="src/images/recommended/beoplay-hx.png"
+                      src="src/images/recommended/beoplay-hx.webp"
                       alt="BEOPLAY-HX"
                     />
                   </a>
@@ -211,7 +211,7 @@
                   >
                     <img
                       class="product__img"
-                      src="src/images/recommended/beosound-theatre.png"
+                      src="src/images/recommended/beosound-theatre.webp"
                       alt="BEOSOUND THEATRE"
                     />
                   </a>
@@ -243,7 +243,7 @@
                     >
                       <img
                         class="category__img"
-                        src="src/images/categories/portable-speakers-left.png"
+                        src="src/images/categories/portable-speakers-left.webp"
                         alt="Portable speakers"
                       />
                     </a>
@@ -253,7 +253,7 @@
                     >
                       <img
                         class="category__img"
-                        src="src/images/categories/portable-speakers-right.png"
+                        src="src/images/categories/portable-speakers-right.webp"
                         alt="Portable speakers"
                       />
                     </a>
@@ -268,7 +268,7 @@
                     >
                       <img
                         class="category__img"
-                        src="src/images/categories/earphones-left.png"
+                        src="src/images/categories/earphones-left.webp"
                         alt="Earphones"
                       />
                     </a>
@@ -278,7 +278,7 @@
                     >
                       <img
                         class="category__img"
-                        src="src/images/categories/earphones-right.png"
+                        src="src/images/categories/earphones-right.webp"
                         alt="Earphones"
                       />
                     </a>
@@ -293,7 +293,7 @@
                     >
                       <img
                         class="category__img"
-                        src="src/images/categories/smart-home-left.png"
+                        src="src/images/categories/smart-home-left.webp"
                         alt="Smart Home"
                       />
                     </a>
@@ -303,7 +303,7 @@
                     >
                       <img
                         class="category__img"
-                        src="src/images/categories/smart-home-right.png"
+                        src="src/images/categories/smart-home-right.webp"
                         alt="Smart Home"
                       />
                     </a>
@@ -327,7 +327,7 @@
           >
             <img
               class="about-us__img"
-              src="src/images/about-us.png"
+              src="src/images/about-us.webp"
               alt="Vintage Bang & Olufsen audio system"
             />
             <div class="container">
@@ -348,76 +348,79 @@
           <!-- #endregion -->
         </div>
       </main>
-      <footer class="footer">
-        <div class="container">
-          <h2 class="contact-us__section-title section-title">Contact us</h2>
-          <div
-            class="contact-us"
-            id="contact-us"
+    </div>
+
+    <span id="contact-us-position"></span>
+    <footer class="footer">
+      <div class="container">
+        <h2 class="contact-us__section-title section-title">Contact us</h2>
+        <div
+          class="contact-us"
+          id="contact-us"
+        >
+          <form
+            class="contact-us__form form"
+            action="#"
+            onsubmit="this.reset(); return false;"
           >
-            <form
-              class="contact-us__form form"
-              action="#"
-              onsubmit="this.reset(); return false;"
+            <input
+              class="form__input"
+              type="text"
+              name="name"
+              placeholder="Name"
+              required
+            />
+            <input
+              class="form__input"
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              class="form__input form__input--message"
+              name="message"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button
+              class="button"
+              type="submit"
             >
-              <input
-                class="form__input"
-                type="text"
-                name="name"
-                placeholder="Name"
-                required
-              />
-              <input
-                class="form__input"
-                type="email"
-                name="email"
-                placeholder="Email"
-                required
-              />
-              <textarea
-                class="form__input form__input--message"
-                name="message"
-                placeholder="Message"
-                required
-              ></textarea>
-              <button
-                class="button"
-                type="submit"
-              >
-                Send
-              </button>
-            </form>
-            <div class="contact-us__info info">
-              <a
-                href="tel:+1 234 5555-55-55"
-                class="info__link"
-              >
-                <span class="info__label">Phone</span>
-                +1 234 5555-55-55
-              </a>
-              <a
-                href="mailto:hello@bang&olufsen.com"
-                class="info__link"
-              >
-                <span class="info__label">Email</span>
-                hello@bang&olufsen.com
-              </a>
-              <a
-                href="https://www.google.com/maps/"
-                class="info__link"
-                target="_blank"
-              >
-                <span class="info__label">Address</span>
-                400 first ave.
-                <br />
-                suite 700
-                <br />
-                Minneapolis, MN 55401
-              </a>
-            </div>
+              Send
+            </button>
+          </form>
+
+          <div class="contact-us__info info">
+            <a
+              href="tel:+1 234 5555-55-55"
+              class="info__link"
+            >
+              <span class="info__label">Phone</span>
+              +1 234 5555-55-55
+            </a>
+            <a
+              href="mailto:hello@bang&olufsen.com"
+              class="info__link"
+            >
+              <span class="info__label">Email</span>
+              hello@bang&olufsen.com
+            </a>
+            <a
+              href="https://www.google.com/maps/"
+              class="info__link"
+              target="_blank"
+            >
+              <span class="info__label">Address</span>
+              400 first ave.
+              <br />
+              suite 700
+              <br />
+              Minneapolis, MN 55401
+            </a>
           </div>
         </div>
-      </footer>
-    </body>
-  </div>
+      </div>
+    </footer>
+  </body>
 </html>

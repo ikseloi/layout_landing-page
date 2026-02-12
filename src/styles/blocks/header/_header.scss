@@ -14,20 +14,20 @@
     margin-inline: auto;
   }
 
-  background-image: url('../images/header-bg.png');
+  background-image: url('../images/header-bg.webp');
   background-size: cover;
   background-position: center;
 
   .header__title {
     margin: 0;
-    margin-block-end: $header-title-margin-block-end-mobile;
+    margin-block-end: $header-title-margin-block-end-on-mobile;
 
     font-size: $font-size-3xl;
     line-height: $line-height-1;
 
     @include on-tablet {
       font-size: $font-size-4xl;
-      margin-block-end: $header-title-margin-block-end-tablet;
+      margin-block-end: $header-title-margin-block-end-on-tablet;
     }
 
     @include on-desktop {

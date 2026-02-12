@@ -12,7 +12,7 @@
   &__link {
     &--left {
       @include on-tablet {
-        grid-column: span $category-link-left-grid-column-span-tablet;
+        grid-column: span $category-link-left-grid-column-span-on-tablet;
       }
 
       @include on-desktop {
@@ -22,7 +22,7 @@
 
     &--right {
       @include on-tablet {
-        grid-column: span $category-link-right-grid-column-span-tablet;
+        grid-column: span $category-link-right-grid-column-span-on-tablet;
       }
 
       @include on-desktop {
