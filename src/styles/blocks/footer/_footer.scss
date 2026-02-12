@@ -5,8 +5,6 @@
 
   @include on-tablet {
     padding-block-end: $footer-padding-block-end-on-tablet;
-
-    // background: #e5e5e5;
   }
 
   @include on-full-footer {
@@ -16,18 +14,3 @@
     bottom: 0;
   }
 }
-
-// #contact-us-position {
-//   display: block;
-//   position: relative;
-//   height: 0;
-// }
-
-// #contact-us-position::before {
-//   content: '';
-//   display: block;
-//   height: 652px;
-//   margin-top: 652px;
-//   visibility: hidden;
-//   z-index: 1;
-// }
