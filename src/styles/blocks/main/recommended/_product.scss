@@ -5,7 +5,7 @@
     margin-inline: auto;
     margin-block-end: $product-img-margin-block-end;
 
-    @include hover(transform, scale($scale-size));
+    @include hover(transform, scale($scale-size-recommended-products));
   }
 
   &__title {

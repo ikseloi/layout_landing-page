@@ -49,7 +49,6 @@
 
   @include on-desktop {
     padding-inline: $padding-inline-on-desktop;
-    margin-inline: auto;
   }
 }
 
@@ -57,7 +56,6 @@
   @include content-padding-inline;
 
   position: relative;
-  margin-inline: auto;
 }
 
 @mixin hover($property, $toValue) {

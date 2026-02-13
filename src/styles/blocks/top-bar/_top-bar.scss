@@ -7,7 +7,7 @@
   padding-block: $top-bar-padding-block;
 
   &__logo-link {
-    @include hover(transform, scale($scale-size));
+    @include hover(transform, scale($scale-size-top-bar));
 
     display: flex;
     height: $top-bar-logo-height-on-mobile;
@@ -19,7 +19,7 @@
   }
 
   &__icon {
-    @include hover(transform, scale($scale-size));
+    @include hover(transform, scale($scale-size-top-bar));
 
     display: flex;
     align-items: center;

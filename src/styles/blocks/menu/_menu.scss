@@ -1,18 +1,7 @@
 .menu {
   &__top {
-    // for a full-screen top-bar menu with a maximum screen height of up to 400 pixels
-
-    @include content-padding-inline;
-
     margin-block-end: $menu-top-padding-block-end;
-
-    @include on-compact-footer {
-      margin-block-end: $menu-top-padding-block-end-low-screen-height;
-      position: sticky;
-      top: 0;
-      z-index: 1;
-      background-color: $menu-top-bar-bg;
-    }
+    background-color: $bg-menu;
   }
 
   &__nav {
@@ -42,14 +31,17 @@
     text-transform: uppercase;
     width: fit-content;
 
-    @include on-compact-footer {
-      margin-block-end: $menu-call-to-order-margin-block-end-low-screen-height;
-    }
+    margin-block-end: $menu-call-to-order-margin-block-end-low-screen-height;
   }
 
   height: 100vh;
+
+  @include on-desktop {
+    height: $menu-height-on-desktop;
+  }
+
   overflow: auto;
 
   color: $color-text-main;
-  background-color: $menu-bg;
+  background-color: $bg-menu;
 }

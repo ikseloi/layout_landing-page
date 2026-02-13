@@ -1,5 +1,7 @@
 $tablet-min-width: 744px;
-$desktop-min-width: 1260px;
+$desktop-min-width: 1500px;
+$header-height-on-desktop: 720px;
+$menu-height-on-desktop: 700px;
 $height-breakpoint-footer: 878px;
 
 // --
@@ -139,8 +141,7 @@ $font-weight-bold: 700;
 $color-text-main: #1b2129;
 $color-text-secondary: #9393a3;
 $color-contrast: #fff;
-$menu-top-bar-bg: #e5e5e5;
-$menu-bg: #f9f9f9;
+$bg-menu: #f9f9f9;
 $input-bg-primary: #f9f9f9;
 $color-bg-main: #fff;
 
@@ -163,4 +164,6 @@ $button-bg-active: #1b2129;
 // --
 
 $time-03s: 0.3s;
-$scale-size: 1.1;
+$scale-size-top-bar: 1.2;
+$scale-size-recommended-products: 1.07;
+$scale-size-category-producrs: 1.05;

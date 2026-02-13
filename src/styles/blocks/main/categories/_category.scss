@@ -3,12 +3,6 @@
     @include page-grid;
   }
 
-  &__img {
-    width: 100%;
-
-    @include hover(transform, scale($scale-size));
-  }
-
   &__link {
     &--left {
       @include on-tablet {
@@ -29,5 +23,11 @@
         grid-column: span $category-link-right-grid-column-span-on-desktop;
       }
     }
+  }
+
+  &__img {
+    @include hover(transform, scale($scale-size-category-producrs));
+
+    width: 100%;
   }
 }

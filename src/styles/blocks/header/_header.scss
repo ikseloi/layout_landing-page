@@ -12,11 +12,10 @@
     height: 100vh;
 
     @include on-desktop {
-      height: 720px;
+      height: $header-height-on-desktop;
     }
 
     max-width: $desktop-min-width;
-    margin-inline: auto;
   }
 
   background-image: url('../images/header-bg.webp');
