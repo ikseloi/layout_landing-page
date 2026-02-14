@@ -48,7 +48,7 @@
   }
 
   @include on-desktop {
-    max-width: 1500px;
+    max-width: $content-max-width;
     margin-inline: auto;
   }
 }
