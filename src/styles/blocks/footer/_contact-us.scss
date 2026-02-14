@@ -30,7 +30,6 @@
     }
 
     @include on-desktop {
-      grid-column: 8 / -1;
       grid-column: #{$contact-us-info-grid-column-start-on-desktop} / #{$contact-us-info-grid-column-end-on-desktop};
     }
   }

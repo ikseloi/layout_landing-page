@@ -34,13 +34,11 @@
     margin-block-end: $menu-call-to-order-margin-block-end-low-screen-height;
   }
 
-  height: 100vh;
-
-  @include on-desktop {
-    height: $menu-height-on-desktop;
-  }
+  height: 98vh;
+  width: 100vw;
 
   overflow: auto;
+  z-index: 1;
 
   color: $color-text-main;
   background-color: $bg-menu;

@@ -1,22 +1,13 @@
 .page {
   &__body {
     margin: 0;
+    padding: 0;
 
     font-size: $font-size-base;
     font-family: $font-family-main;
   }
 
-  &__wrapper {
-    max-width: $desktop-min-width;
-    margin-inline: auto;
-    position: relative;
-    z-index: 1;
-  }
-
   &__menu {
-    max-width: $desktop-min-width;
-    margin-inline: auto;
-
     position: fixed;
     top: 0;
     left: 0;

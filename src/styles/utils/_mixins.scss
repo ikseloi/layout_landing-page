@@ -48,14 +48,13 @@
   }
 
   @include on-desktop {
-    padding-inline: $padding-inline-on-desktop;
+    max-width: 1500px;
+    margin-inline: auto;
   }
 }
 
 .container {
   @include content-padding-inline;
-
-  position: relative;
 }
 
 @mixin hover($property, $toValue) {

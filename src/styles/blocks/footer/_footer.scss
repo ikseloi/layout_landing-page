@@ -9,8 +9,6 @@
 
   @include on-full-footer {
     position: sticky;
-    max-width: $desktop-min-width;
-    margin-inline: auto;
     bottom: 0;
   }
 }

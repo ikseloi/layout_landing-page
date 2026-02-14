@@ -3,19 +3,11 @@
 
 .header {
   &__content {
-    @include content-padding-inline;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     height: 100vh;
-
-    @include on-desktop {
-      height: $header-height-on-desktop;
-    }
-
-    max-width: $desktop-min-width;
   }
 
   background-image: url('../images/header-bg.webp');
@@ -41,4 +33,7 @@
     font-weight: $font-weight-bold;
     color: $color-contrast;
   }
+
+  z-index: 1;
+  position: relative;
 }
