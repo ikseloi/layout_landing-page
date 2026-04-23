@@ -18,16 +18,16 @@
     margin: 0;
     margin-block-end: $header-title-margin-block-end-on-mobile;
 
-    font-size: $font-size-3xl;
-    line-height: $line-height-1;
+    font-size: $font-size-display-md;
+    line-height: $line-height-none;
 
     @include on-tablet {
-      font-size: $font-size-4xl;
+      font-size: $font-size-display-xl;
       margin-block-end: $header-title-margin-block-end-on-tablet;
     }
 
     @include on-desktop {
-      font-size: $font-size-5xl;
+      font-size: $font-size-display-2xl;
     }
 
     font-weight: $font-weight-bold;

@@ -6,8 +6,8 @@
     margin-block-end: $info-label-margin-block-end;
     text-decoration: none;
 
-    font-size: $font-size-sm;
-    line-height: $line-height-1-4;
+    font-size: $font-size-body-sm;
+    line-height: $line-height-base;
     letter-spacing: $letter-spacing-sm;
     font-weight: $font-weight-normal;
     color: $color-text-secondary;
@@ -18,8 +18,8 @@
       margin-block-end: $info-link-margin-block-end;
     }
 
-    font-size: $font-size-base;
-    line-height: $line-height-1-4;
+    font-size: $font-size-body-base;
+    line-height: $line-height-base;
     letter-spacing: $letter-spacing-sm;
     font-weight: $font-weight-normal;
     color: $color-text-main;
